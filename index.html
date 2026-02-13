@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>É o Rivi — portfólio</title>
+  <title>É o Rivi</title>
 
   <style>
     * {
@@ -15,118 +15,77 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: #ffffff;
-      color: #111;
+      color: #000;
       min-height: 100vh;
       display: flex;
       justify-content: center;
-      padding: 32px 16px;
+      padding: 40px 16px;
     }
 
     .container {
       width: 100%;
       max-width: 520px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       text-align: center;
-      gap: 14px;
     }
 
-    /* Foto de perfil */
-    .profile-photo {
-      width: 120px;
-      height: 120px;
+    .profile {
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       border: 2px solid #000;
-      overflow: hidden;
-      background: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .profile-photo img {
-      width: 100%;
-      height: 100%;
       object-fit: cover;
       display: block;
+      margin: 0 auto 18px auto;
     }
 
-    /* Textos */
-    .title {
+    h1 {
       font-size: 28px;
-      font-weight: 700;
-      margin-top: 6px;
+      font-weight: 600;
+      margin-bottom: 6px;
     }
 
-    .subtitle {
+    h2 {
       font-size: 18px;
       font-weight: 400;
-      opacity: 0.85;
-      margin-bottom: 8px;
+      margin-bottom: 26px;
       text-transform: lowercase;
     }
 
-    /* Galeria */
     .gallery {
-      width: 100%;
       display: flex;
       flex-direction: column;
       gap: 18px;
-      margin-top: 8px;
     }
 
-    /* Imagens ORIGINAIS (sem nenhum efeito) */
     .gallery img {
       width: 100%;
       height: auto;
       display: block;
+
+      /* GARANTIA: sem borda, sem sombra, sem arredondamento */
       border: none;
       border-radius: 0;
       box-shadow: none;
+      filter: none;
       outline: none;
-    }
-
-    @media (max-width: 420px) {
-      .profile-photo {
-        width: 105px;
-        height: 105px;
-      }
-
-      .title {
-        font-size: 24px;
-      }
-
-      .subtitle {
-        font-size: 16px;
-      }
     }
   </style>
 </head>
 
 <body>
   <main class="container">
+    <img class="profile" src="./perfil.png" alt="Foto de perfil" />
 
-    <!-- Foto de perfil -->
-    <div class="profile-photo">
-      <img src="./perfil.png" alt="Foto de perfil" />
-    </div>
+    <h1>É o Rivi</h1>
+    <h2>portfólio</h2>
 
-    <h1 class="title">É o Rivi</h1>
-    <p class="subtitle">portfólio</p>
-
-    <!-- 3 imagens -->
-<section class="gallery">
-  <img src="./imagem1.png" alt="Imagem 1" />
-  <img src="./imagem2.png" alt="Imagem 2" />
-  <img src="./imagem3.jpeg" alt="Imagem 3" />
-  <img src="./imagem4.jpg" alt="Imagem 4" />
-  <img src="./imagem5.png" alt="Imagem 5" />
-</section>
-
+    <section class="gallery">
+      <img src="./imagem1.png" alt="Imagem 1" />
+      <img src="./imagem2.png" alt="Imagem 2" />
+      <img src="./imagem3.jpg" alt="Imagem 3" />
+      <img src="./imagem4.jpg" alt="Imagem 4" />
+      <img src="./imagem5.png" alt="Imagem 5" />
+    </section>
   </main>
 </body>
-
 </html>
-
-
