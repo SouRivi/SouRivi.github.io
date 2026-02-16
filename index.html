@@ -51,6 +51,28 @@
       text-transform: lowercase;
     }
 
+    /* SEÇÕES */
+    .section {
+      margin-top: 26px;
+      text-align: left;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+      text-align: center;
+    }
+
+    .section-price {
+      font-size: 15px;
+      font-weight: 400;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
     .gallery {
       display: flex;
       flex-direction: column;
@@ -79,14 +101,30 @@
     <h1>É o Rivi</h1>
     <h2>portfólio</h2>
 
-    <section class="gallery">
-      <img src="./imagem1.png" alt="Imagem 1" />
-      <img src="./imagem2.png" alt="Imagem 2" />
-      <img src="./imagem3.jpg" alt="Imagem 3" />
-      <img src="https://sourivi.github.io/imagem4.png" alt="Imagem 4" />
-      <img src="./imagem5.png" alt="Imagem 5" />
+    <!-- THUMBS -->
+    <section class="section">
+      <div class="section-title">Thumb</div>
+      <div class="section-price">R$ 15</div>
+
+      <div class="gallery">
+        <img src="./imagem1.png" alt="Thumb 1" />
+        <img src="./imagem2.png" alt="Thumb 2" />
+        <img src="./imagem3.jpg" alt="Thumb 3" />
+        <img src="https://sourivi.github.io/imagem4.png" alt="Thumb 4" />
+        <img src="./imagem5.png" alt="Thumb 5" />
+      </div>
     </section>
+
+    <!-- CAPAS SPOTIFY -->
+    <section class="section">
+      <div class="section-title">Capas para Spotify</div>
+      <div class="section-price">R$ 10</div>
+
+      <div class="gallery">
+        <img src="./capa1.jpg" alt="Capa Spotify 1" />
+      </div>
+    </section>
+
   </main>
 </body>
 </html>
-
